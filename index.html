@@ -11,7 +11,7 @@
       <a-asset-item id='familyfeud-obj' src='familyfeud_simple.obj'></a-asset-item>
       <a-asset-item id='familyfeud-mtl' src='familyfeud_simple.mtl'></a-asset-item>
     </a-assets>
-    <a-entity position="2 .8 10" scale="0.2 0.2 0.2" geometry="primitive: box" material="color: ##FFFF00" wire="on: click; emit: toggle; targets: #feud"></a-entity>
+    <a-entity position="2 .8 10" scale="0.2 0.2 0.2" geometry="primitive: box" material="color: #ff0200" wire="on: click; emit: toggle; targets: #feud"></a-entity>
     <a-entity id="feud" obj-model="obj: #familyfeud-obj; mtl: #familyfeud-mtl" position="0 -5 5" rotation="0 -90 0" scale="0.05 0.05 0.05" n-mesh-collider="type:environment; convex: false" sync="own-on: toggle" sync-transform>
       <a-animation attribute="position" begin="toggle" dur="1000" from="0 -5 7" to="0 0.55 7" direction="alternate" repeat="0"></a-animation>
       <a-animation attribute="scale" begin="toggle" dur="1000" direction="alternate" from="0.05 0.05 0.05" to="1 1 1" repeat="0"></a-animation>   
